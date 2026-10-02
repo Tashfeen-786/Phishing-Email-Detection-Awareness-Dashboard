@@ -1,34 +1,21 @@
-MIT License
+Copyright (c) 2026 Tashfeen-786
 
-Copyright (c) 2026 Phishing Email Detection & Awareness Dashboard contributors
+ALL RIGHTS RESERVED.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+This project is publicly available for viewing and educational
+reference purposes only.
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+No permission is granted to copy, reproduce, modify, distribute,
+publish, sublicense, sell, or use this project's source code,
+in whole or in part, without prior written permission from
+the copyright holder.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+The project is intended for educational and defensive cybersecurity
+purposes only.
 
----------------------------------------------------------------------------
-ADDITIONAL NOTE ON INTENDED USE
+All data included with this project is synthetic. No real phishing
+campaigns, credentials, personal data, or unauthorized targets are
+included or intended.
 
-This project is a DEFENSIVE security tool built for education. It analyses
-email text to help a reader recognise phishing, and it teaches the warning
-signs.
-
-It must not be used to create, send or test phishing against anyone without
-that organisation's explicit written authorisation. All data shipped with the
-project is synthetic, and every domain and IP address used is reserved for
-documentation by RFC 2606, RFC 6761 and RFC 5737.
----------------------------------------------------------------------------
+For permission to reuse or adapt any part of this project, please
+contact the copyright holder.
