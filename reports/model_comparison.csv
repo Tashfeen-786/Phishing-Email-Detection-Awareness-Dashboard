@@ -1,0 +1,4 @@
+model,split,accuracy,precision,recall,f1,roc_auc,true_positive,true_negative,false_positive,false_negative,selected
+Logistic Regression,test,0.9111,0.8723,0.9535,0.9111,0.9861,41,41,6,2,False
+Naive Bayes,test,0.9556,0.9535,0.9535,0.9535,0.9916,41,45,2,2,True
+Random Forest,test,0.9222,0.8913,0.9535,0.9213,0.9886,41,42,5,2,False

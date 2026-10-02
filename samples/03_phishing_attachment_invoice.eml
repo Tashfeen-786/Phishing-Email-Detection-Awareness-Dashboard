@@ -1,0 +1,29 @@
+From: Billing Department <billing@secure-invoice-portal.invalid.test>
+To: user@example.com
+Subject: Outstanding Invoice - Immediate Payment Required
+Date: Sun, 28 Sep 2025 17:45:11 +0000
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="----SAMPLEBOUNDARY001"
+
+------SAMPLEBOUNDARY001
+Content-Type: text/plain; charset="utf-8"
+
+Dear User,
+
+Our records show an unpaid invoice on your account. Failure to settle within
+48 hours will result in legal action and additional recovery fees.
+
+Please open the attached invoice and confirm your payment details immediately.
+
+Accounts Receivable
+
+------SAMPLEBOUNDARY001
+Content-Type: text/plain; charset="utf-8"
+Content-Disposition: attachment; filename="invoice_4821.pdf.exe"
+
+This attachment is an INERT PLAIN-TEXT PLACEHOLDER. It contains no code and is
+not executable. Its filename exists only so the attachment analyzer can
+demonstrate double-extension detection. This project never opens, unpacks or
+executes any attachment - it reads the filename only.
+
+------SAMPLEBOUNDARY001--

@@ -1,0 +1,231 @@
+{
+  "generated_at": "2026-09-30T02:27:31+00:00",
+  "dataset": {
+    "path": "/home/user/Phishing-Email-Detection-Awareness-Dashboard/data/phishing_email_dataset.csv",
+    "rows_raw": 600,
+    "rows_after_cleaning": 598,
+    "duplicates_removed": 2,
+    "phishing": 287,
+    "legitimate": 311
+  },
+  "split": {
+    "strategy": "stratified 70/15/15",
+    "seed": 42,
+    "train": 418,
+    "validation": 90,
+    "test": 90
+  },
+  "representation": {
+    "text": "TF-IDF word 1-2 grams, max_features=20000, min_df=2, sublinear_tf",
+    "tfidf_vocabulary": 2725,
+    "structured_features": 39,
+    "total_columns": 2764,
+    "note": "TF-IDF and the scaler are fitted on the TRAINING split only."
+  },
+  "selected_model": "Naive Bayes",
+  "selection_rule": "highest validation F1; the test split was never used for selection",
+  "models": {
+    "Logistic Regression": {
+      "validation": {
+        "accuracy": 0.9556,
+        "precision": 0.9333,
+        "recall": 0.9767,
+        "f1": 0.9545,
+        "support": 90,
+        "roc_auc": 0.9936,
+        "confusion_matrix": {
+          "true_negative": 44,
+          "false_positive": 3,
+          "false_negative": 1,
+          "true_positive": 42,
+          "matrix": [
+            [
+              44,
+              3
+            ],
+            [
+              1,
+              42
+            ]
+          ],
+          "labels": [
+            "LEGITIMATE",
+            "PHISHING"
+          ]
+        },
+        "false_positive_rate": 0.0638,
+        "false_negative_rate": 0.0233
+      },
+      "test": {
+        "accuracy": 0.9111,
+        "precision": 0.8723,
+        "recall": 0.9535,
+        "f1": 0.9111,
+        "support": 90,
+        "roc_auc": 0.9861,
+        "confusion_matrix": {
+          "true_negative": 41,
+          "false_positive": 6,
+          "false_negative": 2,
+          "true_positive": 41,
+          "matrix": [
+            [
+              41,
+              6
+            ],
+            [
+              2,
+              41
+            ]
+          ],
+          "labels": [
+            "LEGITIMATE",
+            "PHISHING"
+          ]
+        },
+        "false_positive_rate": 0.1277,
+        "false_negative_rate": 0.0465
+      },
+      "train_seconds": 0.01
+    },
+    "Naive Bayes": {
+      "validation": {
+        "accuracy": 0.9667,
+        "precision": 0.9545,
+        "recall": 0.9767,
+        "f1": 0.9655,
+        "support": 90,
+        "roc_auc": 0.9936,
+        "confusion_matrix": {
+          "true_negative": 45,
+          "false_positive": 2,
+          "false_negative": 1,
+          "true_positive": 42,
+          "matrix": [
+            [
+              45,
+              2
+            ],
+            [
+              1,
+              42
+            ]
+          ],
+          "labels": [
+            "LEGITIMATE",
+            "PHISHING"
+          ]
+        },
+        "false_positive_rate": 0.0426,
+        "false_negative_rate": 0.0233
+      },
+      "test": {
+        "accuracy": 0.9556,
+        "precision": 0.9535,
+        "recall": 0.9535,
+        "f1": 0.9535,
+        "support": 90,
+        "roc_auc": 0.9916,
+        "confusion_matrix": {
+          "true_negative": 45,
+          "false_positive": 2,
+          "false_negative": 2,
+          "true_positive": 41,
+          "matrix": [
+            [
+              45,
+              2
+            ],
+            [
+              2,
+              41
+            ]
+          ],
+          "labels": [
+            "LEGITIMATE",
+            "PHISHING"
+          ]
+        },
+        "false_positive_rate": 0.0426,
+        "false_negative_rate": 0.0465
+      },
+      "train_seconds": 0.01
+    },
+    "Random Forest": {
+      "validation": {
+        "accuracy": 0.9444,
+        "precision": 0.8958,
+        "recall": 1.0,
+        "f1": 0.9451,
+        "support": 90,
+        "roc_auc": 0.9965,
+        "confusion_matrix": {
+          "true_negative": 42,
+          "false_positive": 5,
+          "false_negative": 0,
+          "true_positive": 43,
+          "matrix": [
+            [
+              42,
+              5
+            ],
+            [
+              0,
+              43
+            ]
+          ],
+          "labels": [
+            "LEGITIMATE",
+            "PHISHING"
+          ]
+        },
+        "false_positive_rate": 0.1064,
+        "false_negative_rate": 0.0
+      },
+      "test": {
+        "accuracy": 0.9222,
+        "precision": 0.8913,
+        "recall": 0.9535,
+        "f1": 0.9213,
+        "support": 90,
+        "roc_auc": 0.9886,
+        "confusion_matrix": {
+          "true_negative": 42,
+          "false_positive": 5,
+          "false_negative": 2,
+          "true_positive": 41,
+          "matrix": [
+            [
+              42,
+              5
+            ],
+            [
+              2,
+              41
+            ]
+          ],
+          "labels": [
+            "LEGITIMATE",
+            "PHISHING"
+          ]
+        },
+        "false_positive_rate": 0.1064,
+        "false_negative_rate": 0.0465
+      },
+      "train_seconds": 0.96
+    }
+  },
+  "classification_reports": {
+    "Logistic Regression": "              precision    recall  f1-score   support\n\n  LEGITIMATE     0.9535    0.8723    0.9111        47\n    PHISHING     0.8723    0.9535    0.9111        43\n\n    accuracy                         0.9111        90\n   macro avg     0.9129    0.9129    0.9111        90\nweighted avg     0.9147    0.9111    0.9111        90\n",
+    "Naive Bayes": "              precision    recall  f1-score   support\n\n  LEGITIMATE     0.9574    0.9574    0.9574        47\n    PHISHING     0.9535    0.9535    0.9535        43\n\n    accuracy                         0.9556        90\n   macro avg     0.9555    0.9555    0.9555        90\nweighted avg     0.9556    0.9556    0.9556        90\n",
+    "Random Forest": "              precision    recall  f1-score   support\n\n  LEGITIMATE     0.9545    0.8936    0.9231        47\n    PHISHING     0.8913    0.9535    0.9213        43\n\n    accuracy                         0.9222        90\n   macro avg     0.9229    0.9236    0.9222        90\nweighted avg     0.9243    0.9222    0.9223        90\n"
+  },
+  "honesty_note": "Every value in this file was produced by running ml/train_model.py on the synthetic dataset. Nothing is hand-written. Re-running with the same seed reproduces these numbers exactly.",
+  "metric_meaning": {
+    "precision": "Of the emails predicted PHISHING, the share that really were phishing. Low precision = false alarms = analyst alert fatigue.",
+    "recall": "Of the phishing emails present, the share the model caught. Low recall = missed attacks.",
+    "f1": "Harmonic mean of precision and recall - one number when both errors matter.",
+    "roc_auc": "Probability that a random phishing email is ranked above a random legitimate one. Threshold-independent.",
+    "accuracy": "Share of all predictions that were correct. Misleading on imbalanced data and when the two error types have different costs."
+  }
+}

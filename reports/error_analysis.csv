@@ -1,0 +1,13 @@
+email_id,sender_domain,subject,actual,rule_score,classification,ml_probability,hybrid_score,triggered,rule_pred,ml_pred,hybrid_pred,error_type
+EML00084,accounts-team.invalid.test,Re: contract renewal,1,0,LOW RISK,0.9828,39,-,0,1,0,FALSE NEGATIVE
+EML00124,partner-services.invalid.test,Purchase order 5222 acknowledgement,1,0,LOW RISK,0.7686,31,-,0,1,0,FALSE NEGATIVE
+EML00136,example.net,Revised schedule attached,1,0,LOW RISK,0.0723,3,-,0,0,0,FALSE NEGATIVE
+EML00187,accounts-team.invalid.test,Re: contract renewal,1,0,LOW RISK,0.9815,39,-,0,1,0,FALSE NEGATIVE
+EML00249,partner-services.invalid.test,Following up on our conversation,1,0,LOW RISK,0.944,38,-,0,1,0,FALSE NEGATIVE
+EML00282,vendor-desk.invalid.test,Invoice 3262 attached,1,0,LOW RISK,0.0446,2,-,0,0,0,FALSE NEGATIVE
+EML00297,example.com,Invoice 4982 - remittance details,1,0,LOW RISK,0.717,29,-,0,1,0,FALSE NEGATIVE
+EML00353,example.com,Banking provider change,1,0,LOW RISK,0.9921,40,-,0,1,0,FALSE NEGATIVE
+EML00374,partner-services.invalid.test,Banking provider change,1,0,LOW RISK,0.9951,40,-,0,1,0,FALSE NEGATIVE
+EML00444,password-expiry-notice.invalid.test,You have been selected for an exclusive gift card,1,30,MODERATE RISK,1.0,58,"SUSPICIOUS_SENDER, URGENCY, GENERIC_GREETING",0,1,1,FALSE NEGATIVE
+EML00452,accounts-team.invalid.test,Follow-up from today's meeting,1,0,LOW RISK,0.9703,39,-,0,1,0,FALSE NEGATIVE
+EML00534,example.net,Banking provider change,1,0,LOW RISK,0.9902,40,-,0,1,0,FALSE NEGATIVE

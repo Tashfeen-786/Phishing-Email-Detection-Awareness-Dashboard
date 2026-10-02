@@ -1,0 +1,7 @@
+sender,subject,body,urls,attachment_name,measured_score,measured_band
+security-alert@account-check.invalid.test,URGENT: Verify Your Account Immediately,"Dear Customer, confirm your password within 24 hours or your account will be permanently closed.",http://198.51.100.10/verify-account,,80,HIGH RISK / LIKELY PHISHING
+training@example.org,Cybersecurity Workshop Reminder,"Hi Ravi, a reminder that our quarterly workshop runs Thursday at 14:00. This session covers password hygiene.",,,0,LOW RISK
+billing@secure-invoice-portal.invalid.test,Outstanding Invoice - Immediate Payment Required,"Dear User, failure to settle within 48 hours will result in legal action. Please open the attached invoice.",,invoice_4821.pdf.exe,65,SUSPICIOUS
+servicedesk@example.com,Planned maintenance this weekend,"Hello Ravi, the finance reporting system will be unavailable on Saturday between 07:00 and 11:00. No action is required.",,,0,LOW RISK
+m.dsouza@partner-supplies.example.net,Updated bank details for invoice 4821,"Hi Ravi, please note our account details have changed for the upcoming payment. Could you confirm once processed?",,,0,LOW RISK (known false negative - see docs/FALSE_POSITIVES_NEGATIVES.md)
+no-reply@prize-claim-centre.invalid.test,CONGRATULATIONS!!! You Have Been Selected!!!,"Dear Winner, YOU HAVE BEEN SELECTED to receive an exclusive reward. Claim your prize before the offer expires today!!!",http://203.0.113.55/claim?user=winner,,45,SUSPICIOUS

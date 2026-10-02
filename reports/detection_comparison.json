@@ -1,0 +1,161 @@
+{
+  "generated_at": "2026-09-30T02:27:52+00:00",
+  "model_name": "Naive Bayes",
+  "model_trained_at": "2026-09-30T02:27:31+00:00",
+  "test_rows": 90,
+  "thresholds": {
+    "rule": 41,
+    "ml": 0.5,
+    "hybrid": 50,
+    "hybrid_weights": {
+      "rule": 0.6,
+      "ml": 0.4
+    }
+  },
+  "results": {
+    "Rule-based": {
+      "accuracy": 0.8667,
+      "precision": 1.0,
+      "recall": 0.7209,
+      "f1": 0.8378,
+      "support": 90,
+      "roc_auc": 0.8503,
+      "confusion_matrix": {
+        "true_negative": 47,
+        "false_positive": 0,
+        "false_negative": 12,
+        "true_positive": 31,
+        "matrix": [
+          [
+            47,
+            0
+          ],
+          [
+            12,
+            31
+          ]
+        ],
+        "labels": [
+          "LEGITIMATE",
+          "PHISHING"
+        ]
+      },
+      "false_positive_rate": 0.0,
+      "false_negative_rate": 0.2791
+    },
+    "Machine learning": {
+      "accuracy": 0.9556,
+      "precision": 0.9535,
+      "recall": 0.9535,
+      "f1": 0.9535,
+      "support": 90,
+      "roc_auc": 0.9916,
+      "confusion_matrix": {
+        "true_negative": 45,
+        "false_positive": 2,
+        "false_negative": 2,
+        "true_positive": 41,
+        "matrix": [
+          [
+            45,
+            2
+          ],
+          [
+            2,
+            41
+          ]
+        ],
+        "labels": [
+          "LEGITIMATE",
+          "PHISHING"
+        ]
+      },
+      "false_positive_rate": 0.0426,
+      "false_negative_rate": 0.0465
+    },
+    "Hybrid": {
+      "accuracy": 0.8778,
+      "precision": 1.0,
+      "recall": 0.7442,
+      "f1": 0.8533,
+      "support": 90,
+      "roc_auc": 0.9839,
+      "confusion_matrix": {
+        "true_negative": 47,
+        "false_positive": 0,
+        "false_negative": 11,
+        "true_positive": 32,
+        "matrix": [
+          [
+            47,
+            0
+          ],
+          [
+            11,
+            32
+          ]
+        ],
+        "labels": [
+          "LEGITIMATE",
+          "PHISHING"
+        ]
+      },
+      "false_positive_rate": 0.0,
+      "false_negative_rate": 0.2558
+    }
+  },
+  "highest_f1": "Machine learning",
+  "rule_threshold_sweep": [
+    {
+      "rule_threshold": 1,
+      "accuracy": 0.7889,
+      "precision": 0.8,
+      "recall": 0.7442,
+      "f1": 0.7711,
+      "false_positive": 8,
+      "false_negative": 11
+    },
+    {
+      "rule_threshold": 21,
+      "accuracy": 0.8778,
+      "precision": 1.0,
+      "recall": 0.7442,
+      "f1": 0.8533,
+      "false_positive": 0,
+      "false_negative": 11
+    },
+    {
+      "rule_threshold": 41,
+      "accuracy": 0.8667,
+      "precision": 1.0,
+      "recall": 0.7209,
+      "f1": 0.8378,
+      "false_positive": 0,
+      "false_negative": 12
+    },
+    {
+      "rule_threshold": 51,
+      "accuracy": 0.7444,
+      "precision": 1.0,
+      "recall": 0.4651,
+      "f1": 0.6349,
+      "false_positive": 0,
+      "false_negative": 23
+    },
+    {
+      "rule_threshold": 71,
+      "accuracy": 0.6889,
+      "precision": 1.0,
+      "recall": 0.3488,
+      "f1": 0.5172,
+      "false_positive": 0,
+      "false_negative": 28
+    }
+  ],
+  "error_counts": {
+    "rule_false_positive": 0,
+    "rule_false_negative": 12
+  },
+  "interpretation": "All three strategies were scored on the identical held-out test split. The strategy with the highest F1 here won on ONE synthetic dataset with ONE seed; that is evidence, not a general law. The rule engine's value is that it explains itself, which matters to an analyst regardless of which number is higher.",
+  "honesty_note": "Produced by running ml/evaluation.py. No value in this file was typed by hand."
+}
